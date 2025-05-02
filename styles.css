@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body, h1, h2, p, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+nav {
+    background-color: #2980b9;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 10px;
+    text-align: center;
+}
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.character-designs ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+ul li {
+    display: inline-block;
+    width: 30%;
+    min-width: 150px;
+}
+.contact {
+    text-align: center;
+    margin-top: 40px;
+}
+.contact a {
+    color: #2980b9;
+    text-decoration: none;
+}
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+}
+.hero {
+    padding: 30px 10px;
+  }
+}
